@@ -13,9 +13,9 @@ const Volunteer = ({ style }: any) => {
             <div className="row justify-content-center">
                <div className="col-xl-6 col-lg-8 col-md-10">
                   <div className="section-title text-center mb-60">
-                     <span className="section-title__subtitle mb-10">Our Volunteers</span>
-                     {style ? <h3>Meet <span>With Volunteers</span></h3> : <h2>Our <span>Volunteers</span> Style 02</h2>}
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati consectetur adipisicing</p>
+                     <span className="section-title__subtitle mb-10">Our Cleaning Team</span>
+                     {style ? <h3>Meet <span>Our Professional Cleaners</span></h3> : <h2>Our <span>Cleaning Experts</span> Style 02</h2>}
+                     <p>Our trained and dedicated cleaning staff provides high-quality service, ensuring every space is spotless, fresh, and hygienic.</p>
                   </div>
                </div>
             </div>
@@ -25,11 +25,11 @@ const Volunteer = ({ style }: any) => {
                   <div key={item.id} className="col-xl-3 col-sm-6">
                      <div className="valunteer-two-item">
                         <div className="valunteer-two-item__img">
-                           <Image src={item.thumb} alt="Volunteer" />
+                           <Image src={item.thumb} alt="Cleaner" />
                         </div>
                         <div className={`valunteer-two-item__des ${item.item_bg}`}>
                            <h5>{item.name}</h5>
-                           <span>volunteer</span>
+                           <span>Cleaner</span>
                         </div>
                      </div>
                   </div>

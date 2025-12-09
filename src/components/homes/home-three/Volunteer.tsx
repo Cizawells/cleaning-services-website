@@ -16,7 +16,7 @@ const Volunteer = ({ style }: any) => {
                   <div className="section-title text-center mb-60">
                      <span className="section-title__subtitle mb-10">Our Volunteers</span>
                      {style ? <h3>Meet <span>With Volunteers</span></h3> : <h2>Our <span>Volunteers</span> Style 03</h2>}
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati consectetur adipisicing</p>
+                     <p>hommmmmmmmmmmmmme333333333333, consectetur adipisicing elit. Rem autem voluptatem obcaecati consectetur adipisicing</p>
                   </div>
                </div>
             </div>

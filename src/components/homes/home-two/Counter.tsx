@@ -10,12 +10,12 @@ const Counter = () => {
                <div className="col-xl-8 col-lg-10">
                   <div className="counter-section-content">
                      <div className="section-title">
-                        <h2>Making Someone Else’s Dreams A Reality Is Something That&apos;s Value Is Innumerable</h2>
+                        <h2>A Clean Space Brings Comfort, Productivity, And Peace Into Everyday Life</h2>
                      </div>
-                     <i>Helped Fund <span>24,537</span> Projects in 24 Countries,<br /> Benefiting Over 8.2 Million
-                        People</i>
+                     <i>We Have Completed <span>24,537</span> Cleaning Projects Across Multiple Cities,<br /> Serving Over 8.2 Million
+                        Homes & Businesses</i>
                      <div className="counter-btns pt-5 mb-100">
-                        <Link className="cr-btn" href="#">See All Causes</Link>
+                        <Link className="cr-btn" href="#">View All Services</Link>
                         <Link className="cr-btn btn--yellow" href="#">Contac us</Link>
                      </div>
                      

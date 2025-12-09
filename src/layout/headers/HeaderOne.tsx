@@ -7,7 +7,7 @@ import HeaderSearch from "./Menu/HeaderSearch"
 import UseSticky from "@/hooks/UseSticky"
 import HeaderTop from "./Menu/HeaderTop"
 
-import HeaderLogo_1 from "@/assets/img/logos/logo.png";
+import HeaderLogo_1 from "@/assets/img/logos/logo.svg";
 import HeaderLogo_2 from "@/assets/img/logos/logo-white.png";
 
 const HeaderOne = ({ style_1, style_2 }: any) => {
@@ -38,7 +38,15 @@ const HeaderOne = ({ style_1, style_2 }: any) => {
                   </button>
                </div>
                <div className="logo">
-                  <Link href="/"><Image src={style_2 ? HeaderLogo_2 : HeaderLogo_1} alt="img" /></Link>
+                  <Link href="/"><Image 
+                                    src={style_2 ? HeaderLogo_2 : HeaderLogo_1} 
+                                    alt="logo"
+                                    width={70}
+                                    height={50}
+                                    style={{ height: "auto", width: "auto" }}
+                                    />
+{/* {/<Image src={style_2 ? HeaderLogo_2 : HeaderLogo_1} alt="img" /> */}
+</Link> 
                </div>
                <div className="nav-right-part nav-right-part-mobile">
                   <a style={{ cursor: "pointer" }} className="search-bar-btn">
@@ -57,7 +65,7 @@ const HeaderOne = ({ style_1, style_2 }: any) => {
                         <i className="flaticon-user-1"></i>
                      </Link>
                   </div>
-                  <Link className="cr-btn btn--style-two" href="/donate">Donate Now</Link>
+                  <Link className="cr-btn btn--style-two" href="/donate">Book a Service</Link>
                </div>
             </div>
          </nav>

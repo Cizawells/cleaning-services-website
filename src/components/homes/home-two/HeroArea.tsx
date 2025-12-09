@@ -10,7 +10,7 @@ const HeroArea = () => {
             <div className="hero-content mt-110 rmt-0 mb-65 text-center text-white rel z-1">
                <h1>We provide for you cleaning services</h1>
                <div className="hero-btns pt-15 rpt-0">
-                  <Link className="cr-btn" href="#">Donate Now</Link>
+                  <Link className="cr-btn" href="#">Request a Service</Link>
                </div>
                <Image className="hero-shape-two top_image_bounce" src={heroShape} alt="Shape" />
             </div>

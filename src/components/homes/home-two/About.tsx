@@ -18,10 +18,16 @@ interface ContentData {
 
 const about_content: ContentData = {
    sub_title: "About us",
-   title: (<>Welcome To Our Charity <span>Organization</span></>),
-   desc: (<>There are many variations of passages of available but the majority have suffered alteration in some form, by injected humou ndomised words even slightly believable Making this the first true.</>),
-   list: ["Consectetur adipiscing elitsed", "Nostra dapibus varius et semper", "Nullam venenatis ultricies", "Environment For Our Next", "Consectetur adipiscing elitsed", "Maximus a augue Nullam ante"],
-}
+   title: (<>Welcome To Our Professional <span>Cleaning Services</span></>),
+   desc: (<>We provide top-quality residential and commercial cleaning services designed to make your space fresh, spotless, and healthy. With trained cleaners, eco-friendly products, and attention to detail, we guarantee a cleaning experience you can trust.</>),
+   list: [
+         "Premium residential cleaning",
+         "Office & commercial cleaning",
+         "Eco-friendly products used",
+         "Deep cleaning specialists",
+         "Flexible scheduling options",
+         "Professional & trusted team"
+      ],}
 
 const { sub_title, title, desc, list } = about_content;
 

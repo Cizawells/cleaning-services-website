@@ -9,9 +9,9 @@ const Event = () => {
             <div className="row justify-content-center">
                <div className="col-xl-7 col-lg-8 col-md-10">
                   <div className="section-title text-center mb-55">
-                     <span className="section-title__subtitle mb-10">Our Event</span>
-                     <h3>Our <span>Upcoming Event</span></h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati consectetur adipisicing</p>
+                     <span className="section-title__subtitle mb-10">Our Updates</span>
+                     <h3>Our <span>Latest Cleaning Projects</span></h3>
+                     <p>Discover some of the professional cleaning jobs we have recently completed for homes and businesses.</p>
                   </div>
                </div>
             </div>

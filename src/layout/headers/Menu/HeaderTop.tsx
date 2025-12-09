@@ -8,12 +8,12 @@ const HeaderTop = ({ style }: any) => {
                <ul className="topbar-left">
                   {style ?
                      <>
-                        <li><b>Call now - <Link href="callto:333-444555">333 - 444 555</Link></b></li>
-                        <li>Shiloh, Hawaii 81063</li>
+                        <li><b>Call now - <Link href="callto:44-7883055156">44-7883055156</Link></b></li>
+                        <li>123 Clean St, Your City, 10001</li>
                      </> :
                      <>
-                        <li><span>HI</span>, Good Afternoon Dude! </li>
-                        <li><i className="flaticon-pin"></i> Shiloh, Hawaii 81063</li>
+                        <li><span>Welcome</span>, Need cleaning services? </li>
+                        <li><i className="flaticon-pin"></i>  123 Clean St, Your City, 10001</li>
                      </>
                   }
                </ul>
