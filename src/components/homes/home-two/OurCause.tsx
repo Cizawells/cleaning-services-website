@@ -12,9 +12,9 @@ const OurCause = () => {
             <div className="row justify-content-center">
                <div className="col-xl-6 col-lg-8 col-md-10">
                   <div className="section-title text-center mb-50">
-                     <span className="section-title__subtitle mb-10">Our Causes</span>
-                     <h3>Our <span>Latest Causes</span></h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati consectetur adipisicing</p>
+                     <span className="section-title__subtitle mb-10">Our Services</span>
+                     <h3>Our <span>Latest Cleaning Projects</span></h3>
+                     <p>Explore some of our recent cleaning tasks, delivered with quality, care, and professional attention to detail.</p>
                   </div>
                </div>
             </div>
@@ -34,8 +34,8 @@ const OurCause = () => {
                            </div>
                            <h4><Link href="/causes">{item.title}</Link></h4>
                            <div className="cause-price cause-price--green">
-                              <span>Raised : ${item.raised}</span>
-                              <span>Goal : ${item.goal}</span>
+                              <span>Completed : ${item.raised}</span>
+                              <span>Target : ${item.goal}</span>
                            </div>
                            <p> {item.desc}</p>
                            <div className="cause-btn">

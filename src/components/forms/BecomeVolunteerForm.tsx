@@ -40,7 +40,8 @@ const BecomeVolunteerForm = () => {
       <form onSubmit={handleSubmit(onSubmit)} className="volunteer-form">
          <div className="row">
             <div className="col-xl-9 mb-10">
-               <p>Request a quote or schedule your cleaning. We'll get back with available slots and pricing.</p>
+               <p>Fill out the form below to request our professional cleaning services. 
+                  Our team will contact you shortly.</p>
             </div>
             <div className="col-sm-6">
                <div className="form-group">

@@ -13,50 +13,66 @@ const menu_data: MenuItem[] = [
 
   
     {
-        id: 2,
+        id: 1,
         has_dropdown: true,
-        title: "Causes",
+        title: "Home",
         link: "#",
         sub_menus: [
-            { link: "/causes", title: "Causes" },
-            { link: "/causes-slider", title: "Causes Slider" },
-            { link: "/causes-details", title: "Causes Details" },
+            // { link: "/", title: "Home One" },
+            // { link: "/home-two", title: "Home Two" },
+            // { link: "/home-three", title: "Home Three" },
         ],
     },
+  
+    {
+        id: 2,
+        has_dropdown: true,
+        title: "services",
+        link: "#",
+        sub_menus: [
+            { link: "#", title: "Washroom Consumables" },
+            { link: "#", title: "Hygiene Rental" },
+            { link: "#", title: "Deep Cleaning" },
+            { link: "#", title: "Window Cleaning" },
+            { link: "#", title: "High Level Cleaning" },
+        ],
+    },
+     
+
     {
         id: 3,
         has_dropdown: true,
-        title: "Events",
+        title: "Sectors",
         link: "#",
         sub_menus: [
-            { link: "/events", title: "Events" },
-            { link: "/events-slider", title: "Events Slider" },
-            { link: "/event-details", title: "Events Details" },
+            { link: "#", title: "Facilities Management" },
+            { link: "#", title: "Industrial" },
+            { link: "#", title: "Education" }
         ],
     },
-    {
+     {
         id: 4,
-        has_dropdown: true,
-        title: "Portfolio",
+        has_dropdown: false,
+        title: "Locations",
         link: "#",
         sub_menus: [
-            { link: "/portfolio", title: "Portfolio" },
-            { link: "/portfolio-details", title: "Portfolio Details" },
-            { link: "/donate", title: "Donate" }
+            { link: "#", title: "About" },
+            // { link: "/causes-slider", title: "Causes Slider" },
+            // { link: "/causes-details", title: "Causes Details" },
         ],
     },
     {
         id: 5,
         has_dropdown: true,
-        title: "Pages",
+        title: "Contact",
         link: "#",
         sub_menus: [
-            { link: "/about", title: "About Us" },
-            { link: "/contact", title: "Contact Us" },
-            { link: "/volunteers", title: "Volunteers" },
-            { link: "/become-volunteers", title: "Become Volunteer" },
-            { link: "/faqs", title: "FAQ Page" },
-            { link: "/not-found", title: "404 Error" },
+            // { link: "/about", title: "About Us" },
+            // { link: "/contact", title: "Contact Us" },
+            // { link: "/volunteers", title: "Volunteers" },
+            // { link: "/become-volunteers", title: "Become Volunteer" },
+            // { link: "/faqs", title: "FAQ Page" },
+            // { link: "/not-found", title: "404 Error" },
         ],
     },
     {
@@ -65,10 +81,10 @@ const menu_data: MenuItem[] = [
         title: "Blog",
         link: "#",
         sub_menus: [
-            { link: "/blog", title: "Blog" },
-            { link: "/blog-clasic", title: "Blog Clasic" },
-            { link: "/blog-slider", title: "Blog Slider" },
-            { link: "/blog-details", title: "Blog Details" },
+            { link: "#", title: "Blog" },
+            { link: "#", title: "Blog Clasic" },
+            { link: "#", title: "Blog Slider" },
+            { link: "#", title: "Blog Details" },
         ],
     },
 ];

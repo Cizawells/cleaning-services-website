@@ -3,7 +3,7 @@ import Link from "next/link";
 import SocialIcon from "@/components/common/SocialIcon";
 import footer_data from "@/data/footerData";
 
-import logo_1 from "@/assets/img/logos/logo-white.png";
+import logo_1 from "@/assets/img/logos/logo-whit.png";
 import donate from "@/assets/img/footer/donate-by.png";
 
 import footerGallery_1 from "@/assets/img/footer/gallery1.jpg";
@@ -70,7 +70,7 @@ const FooterOne = () => {
             </div>
          </div>
          
-         <div className="footer-bottom mt-50">
+         {/* <div className="footer-bottom mt-50">
             <div className="container">
                <div className="footer-bottom__inner">
                   <div className="donate-by">
@@ -82,7 +82,7 @@ const FooterOne = () => {
                   </div>
                </div>
             </div>
-         </div>
+         </div> */}
       </footer>
    )
 }

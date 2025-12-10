@@ -30,14 +30,14 @@ interface DataType {
     page:"home_2",
     icon: "flaticon-solidarity",
     icon_bg: "counter-item__icon--green",
-    title: "Donation",
+    title: "cleaning",
     counter_number: 876000,
  },
  {
     id: 2,
     page:"home_2",
     icon: "flaticon-help",
-    title: "Volunteers",
+    title: "services",
     counter_number: 45000,
  },
  {
@@ -45,7 +45,7 @@ interface DataType {
     page:"home_2",
     icon: "flaticon-heart",
     icon_bg: "counter-item__icon--yellow",
-    title: "Campaigns",
+    title: "community",
     counter_number: 80000,
  },
  ]

@@ -18,20 +18,25 @@ const UrgentCause = () => {
                   <div className="col-lg-6">
                      <div className="urgent-cause-right-content">
                         <div className="section-title mb-30">
-                           <span className="section-title__subtitle mb-30">Urgent cause</span>
-                           <h2>Clean Water for Children <span>in Africa</span></h2>
+                           <span className="section-title__subtitle mb-30">Urgent Service</span>
+                           <h2>Emergency Deep Cleaning <span>Available Now</span></h2>
                         </div>
-                        <p>There are many variations of passages of orem Ipsum available, but the majority have suffered alteration in some form, by cted ipsum dolor sit amet, consectetur adipisicing elit, sed do usmod mponcid idunt.</p>
-                        <div className="cause-price mt-30">
-                           <span>Raised : $87,689</span>
-                           <span>Goal : $87,689</span>
+
+                        <p>
+                           When spills, stains, or unexpected messes happen, our team is ready to respond quickly.
+                           We offer fast and professional deep cleaning services for homes, offices, and commercial spaces.
+                           Your environment will look spotless, fresh, and healthy again — within hours.
+                        </p>
+                           <div className="cause-price mt-30">
+                           <span>Completed : $87,689</span>
+                           <span>Remaining : $87,689</span>
                         </div>
                         <div className="progress">
                            <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: "60%" }}></div>
                         </div>
                         <div className="urgent-cause-btn">
-                           <Link className="cr-btn" href="#">Donation now</Link>
-                           <Link className="cr-btn btn--green" href="#">Know More</Link>
+                           <Link className="cr-btn" href="#">Book Now</Link>
+                           <Link className="cr-btn btn--green" href="#">View Details</Link>
                         </div>
                      </div>
                   </div>

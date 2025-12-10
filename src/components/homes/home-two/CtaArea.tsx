@@ -11,9 +11,9 @@ const CtaArea = () => {
             <div className="row justify-content-center">
                <div className="col-xl-8 col-lg-10">
                   <div className="section-title text-center text-white">
-                     <h2>Experience A Cleaner, Healthier Space With <span>Our Team</span></h2>
-                     <p>We provide tailored cleaning plans for homes and offices. Get a free quote or schedule your first clean today.</p>
-                     <Link className="cr-btn mt-35" href="/contact">Get a Free Quote</Link>
+                      <h2>Experience a Cleaner, Fresher, and More Comfortable <span>Living Space</span></h2>
+                     <p>Your home or business deserves professional care — let us bring cleanliness and freshness to every corner.</p>
+                     <Link className="cr-btn mt-35" href="#">Book a Cleaning</Link>
                   </div>
                </div>
             </div>

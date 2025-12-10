@@ -17,11 +17,17 @@ interface ContentData {
 }
 
 const about_content: ContentData = {
-   sub_title: "About Us",
-   title: (<>Professional <span>Cleaning</span> Services</>),
-   desc: (<>We deliver trustworthy cleaning solutions for homes and businesses using trained teams and eco-friendly products to keep your space healthy and fresh.</>),
-   list: ["Licensed & Insured Professionals", "Eco-friendly Cleaning Products", "Flexible Scheduling", "Deep & Regular Cleans", "Satisfaction Guaranteed", "Competitive Pricing"],
-}
+   sub_title: "About us",
+   title: (<>Welcome To Our Professional <span>Cleaning Services</span></>),
+   desc: (<>We provide top-quality residential and commercial cleaning services designed to make your space fresh, spotless, and healthy. With trained cleaners, eco-friendly products, and attention to detail, we guarantee a cleaning experience you can trust.</>),
+   list: [
+         "Premium residential cleaning",
+         "Office & commercial cleaning",
+         "Eco-friendly products used",
+         "Deep cleaning specialists",
+         "Flexible scheduling options",
+         "Professional & trusted team"
+      ],}
 
 const { sub_title, title, desc, list } = about_content;
 
