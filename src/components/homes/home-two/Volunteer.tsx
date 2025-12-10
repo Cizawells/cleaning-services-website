@@ -25,7 +25,7 @@ const Volunteer = ({ style }: any) => {
                   <div key={item.id} className="col-xl-3 col-sm-6">
                      <div className="valunteer-two-item">
                         <div className="valunteer-two-item__img">
-                           <Image src={item.thumb} alt="Cleaner" />
+                           <Image src={item.thumb} alt="Cleaner" width={300} height={300} />
                         </div>
                         <div className={`valunteer-two-item__des ${item.item_bg}`}>
                            <h5>{item.name}</h5>

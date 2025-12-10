@@ -1,17 +1,15 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import urgentCauseThumb from "@/assets/img/causes/urgent-causes-left.png"
-
 const UrgentCause = () => {
    return (
       <div className="urgent-cause-two py-120">
          <div className="container">
-            <div className="urgent-cause-inner bgs-cover p-60 py-120" style={{ backgroundImage: `url(/assets/img/causes/urgent-causes-bg.jpg)` }}>
+            <div className="urgent-cause-inner bgs-cover p-60 py-120" style={{ backgroundImage: `url(https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1500&h=800&fit=crop)` }}>
                <div className="row gap-40 align-items-center">
                   <div className="col-lg-6">
                      <div className="urgent-cause-left-image rmb-65">
-                        <Image src={urgentCauseThumb} alt="Causes" />
+                        <Image src="https://images.unsplash.com/photo-1578654377249-e33cae98b126?w=600&h=700&fit=crop" alt="Emergency Cleaning Service" width={400} height={500} />
                      </div>
                   </div>
                   
@@ -28,15 +26,12 @@ const UrgentCause = () => {
                            Your environment will look spotless, fresh, and healthy again — within hours.
                         </p>
                            <div className="cause-price mt-30">
-                           <span>Completed : $87,689</span>
-                           <span>Remaining : $87,689</span>
-                        </div>
-                        <div className="progress">
-                           <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: "60%" }}></div>
+                           <span>Response Time : <strong>Within 2 Hours</strong></span>
+                           <span>Availability : <strong>24/7</strong></span>
                         </div>
                         <div className="urgent-cause-btn">
-                           <Link className="cr-btn" href="#">Book Now</Link>
-                           <Link className="cr-btn btn--green" href="#">View Details</Link>
+                           <Link className="cr-btn" href="/contact">Book Emergency Clean</Link>
+                           <Link className="cr-btn btn--green" href="#services">Our Services</Link>
                         </div>
                      </div>
                   </div>

@@ -4,14 +4,14 @@ import Link from "next/link"
 
 const Event = () => {
    return (
-      <div className="our-event-two bgs-cover pt-120 pb-90 rel z-1" style={{ backgroundImage: `url(/assets/img/events/event-bg.jpg)` }}>
+      <div className="our-event-two bgs-cover pt-120 pb-90 rel z-1" style={{ backgroundImage: `url(https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1500&h=800&fit=crop)` }}>
          <div className="container container-1090">
             <div className="row justify-content-center">
                <div className="col-xl-7 col-lg-8 col-md-10">
                   <div className="section-title text-center mb-55">
-                     <span className="section-title__subtitle mb-10">Our Updates</span>
-                     <h3>Our <span>Latest Cleaning Projects</span></h3>
-                     <p>Discover some of the professional cleaning jobs we have recently completed for homes and businesses.</p>
+                     <span className="section-title__subtitle mb-10">Success Stories</span>
+                     <h3>Completed <span>Cleaning Projects</span></h3>
+                     <p>Discover professional cleaning jobs we have recently completed for residential and commercial clients.</p>
                   </div>
                </div>
             </div>
@@ -21,13 +21,13 @@ const Event = () => {
                   <div key={item.id} className="col-lg-6">
                      <div className={`event-two-item ${item.item_bg}`}>
                         <div className="image">
-                           <Image src={item.thumb} alt="Event" />
+                           <Image src={item.thumb} alt="Event" width={400} height={300} />
                         </div>
                         <div className="content">
-                           <h5><Link href="/event-details">{item.title}</Link></h5>
+                           <h5><Link href="/services">{item.title}</Link></h5>
                            <ul>
                               <li><i className="flaticon-pin"></i> {item.city}</li>
-                              <li><i className="flaticon-time"></i> {item.time}</li>
+                              <li><i className="flaticon-time"></i> Project Duration: {item.time}</li>
                            </ul>
                         </div>
                         <div className="date">

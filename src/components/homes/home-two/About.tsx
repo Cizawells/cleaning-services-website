@@ -1,13 +1,6 @@
 "use client"
-import Image, { StaticImageData } from "next/image"
+import Image from "next/image"
 import Slider from 'react-slick'
-
-import aboutImg_1 from "@/assets/img/about/about-left1.jpg";
-import aboutImg_2 from "@/assets/img/about/about-left2.jpg";
-import aboutImg_3 from "@/assets/img/about/about-left3.jpg";
-import aboutRightImg from "@/assets/img/about/about-right.jpg";
-
-const about_img_data: StaticImageData[] = [aboutImg_1, aboutImg_2, aboutImg_3, aboutImg_2];
 
 interface ContentData {
    sub_title: string;
@@ -17,8 +10,8 @@ interface ContentData {
 }
 
 const about_content: ContentData = {
-   sub_title: "About us",
-   title: (<>Welcome To Our Professional <span>Cleaning Services</span></>),
+   sub_title: "About Us",
+   title: (<>Professional <span>Cleaning Services</span></>),
    desc: (<>We provide top-quality residential and commercial cleaning services designed to make your space fresh, spotless, and healthy. With trained cleaners, eco-friendly products, and attention to detail, we guarantee a cleaning experience you can trust.</>),
    list: [
          "Premium residential cleaning",
@@ -27,7 +20,15 @@ const about_content: ContentData = {
          "Deep cleaning specialists",
          "Flexible scheduling options",
          "Professional & trusted team"
-      ],}
+      ],
+}
+
+const about_img_data = [
+   "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=300&fit=crop",
+   "https://images.unsplash.com/photo-1578654377249-e33cae98b126?w=400&h=300&fit=crop",
+   "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&h=300&fit=crop",
+   "https://images.unsplash.com/photo-1578654377249-e33cae98b126?w=400&h=300&fit=crop"
+];
 
 const { sub_title, title, desc, list } = about_content;
 
@@ -82,10 +83,10 @@ const About = () => {
                      <hr className="mt-40" />
 
                      <Slider {...settings} className="about-middle-images row">
-                        {about_img_data.map((img, i) => (
+                        {about_img_data.map((imgUrl, i) => (
                            <div key={i} className="col-lg-4">
                               <div className="about-middle-images-item">
-                                 <Image src={img} alt="About" />
+                                 <Image src={imgUrl} alt="Cleaning Services" width={300} height={250} />
                               </div>
                            </div>
                         ))}
@@ -102,8 +103,8 @@ const About = () => {
                
                <div className="col-xl-6">
                   <div className="about-us-image-part mb-65 rel">
-                     <Image src={aboutRightImg} alt="About" />
-                     <div className="experiences-year" style={{ backgroundImage: `url(/assets/img/about/experiences.jpg)` }}>
+                     <Image src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=700&fit=crop" alt="Professional Cleaning Team" width={500} height={600} />
+                     <div className="experiences-year" style={{ backgroundImage: `url(https://images.unsplash.com/photo-1578654377249-e33cae98b126?w=200&h=200&fit=crop)` }}>
                         <span className="experiences-year__number">10</span>
                         <span className="experiences-year__text">Years Experience</span>
                      </div>

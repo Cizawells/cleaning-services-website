@@ -12,9 +12,9 @@ const OurCause = () => {
             <div className="row justify-content-center">
                <div className="col-xl-6 col-lg-8 col-md-10">
                   <div className="section-title text-center mb-50">
-                     <span className="section-title__subtitle mb-10">Our Services</span>
-                     <h3>Our <span>Latest Cleaning Projects</span></h3>
-                     <p>Explore some of our recent cleaning tasks, delivered with quality, care, and professional attention to detail.</p>
+                     <span className="section-title__subtitle mb-10">Our Portfolio</span>
+                     <h3>Recent <span>Cleaning Projects</span></h3>
+                     <p>Explore some of our recent professional cleaning jobs completed for homes and businesses.</p>
                   </div>
                </div>
             </div>
@@ -24,7 +24,7 @@ const OurCause = () => {
                   <div key={item.id} className="col-xl-4 col-md-6">
                      <div className={`cause-two-item ${item.item_bg}`}>
                         <div className="image">
-                           <Image src={item.img} alt="Cause" />
+                           <Image src={item.img} alt="Cause" width={400} height={300} />
                         </div>
                         <div className="content">
                            <div className={`circle-progresss ${item.progress_bg}`}>
@@ -32,14 +32,14 @@ const OurCause = () => {
                               <span><CircleProgress finish={item.percentage} /></span>
                            </div>
                            </div>
-                           <h4><Link href="/causes">{item.title}</Link></h4>
+                           <h4><Link href="/services">{item.title}</Link></h4>
                            <div className="cause-price cause-price--green">
-                              <span>Completed : ${item.raised}</span>
-                              <span>Target : ${item.goal}</span>
+                              <span>Status : Completed</span>
+                              <span>Quality : Premium</span>
                            </div>
                            <p> {item.desc}</p>
                            <div className="cause-btn">
-                              <Link className={`cr-btn ${item.btn_bg}`} href="#">Donation now</Link>
+                              <Link className={`cr-btn ${item.btn_bg}`} href="/services">View Details</Link>
                            </div>
                         </div>
                      </div>

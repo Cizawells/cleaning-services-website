@@ -5,12 +5,6 @@ import testimonial_data from "@/data/testimonialData";
 import Image from "next/image";
 
 import quoteIcon from "@/assets/img/testimonials/quote-icon.png";
-import testimonialImg from "@/assets/img/testimonials/testimonial-two-left.png";
-import testimonialCircle from "@/assets/img/testimonials/testimonial-two-bg.png";
-
-import testimonialThumb_1 from "@/assets/img/testimonials/testi-thumb1.jpg";
-import testimonialThumb_2 from "@/assets/img/testimonials/testi-thumb2.jpg";
-import testimonialThumb_3 from "@/assets/img/testimonials/testi-thumb3.jpg";
 
 const Testimonial = ({ style }: any) => {
 
@@ -29,8 +23,7 @@ const Testimonial = ({ style }: any) => {
             <div className="row gap-100 align-items-center">
                <div className="col-lg-5">
                   <div className="testimonial-two-image rel z-1 rmb-65">
-                     <Image src={testimonialImg} alt="Testimonials" />
-                     <Image className="circle-shape top_image_bounce" src={testimonialCircle} alt="World" />
+                     <Image src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&h=700&fit=crop" alt="Satisfied Cleaning Clients" width={400} height={500} />
                   </div>
                </div>
                
@@ -79,13 +72,13 @@ const Testimonial = ({ style }: any) => {
                         className="testimonial-thumb-two"
                      >
                         <div className="testimonial-thumb-item">
-                           <Image src={testimonialThumb_1} alt="Author" />
+                           <Image src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop" alt="Client Avatar" width={100} height={100} />
                         </div>
                         <div className="testimonial-thumb-item">
-                           <Image src={testimonialThumb_2} alt="Author" />
+                           <Image src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop" alt="Client Avatar" width={100} height={100} />
                         </div>
                         <div className="testimonial-thumb-item">
-                           <Image src={testimonialThumb_3} alt="Author" />
+                           <Image src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop" alt="Client Avatar" width={100} height={100} />
                         </div>
                      </Slider>
                   </div>

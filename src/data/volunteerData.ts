@@ -1,34 +1,9 @@
 import { StaticImageData } from "next/image";
 
-import volunteerThumb_1 from "@/assets/img/valunteer/valunteer1.jpg";
-import volunteerThumb_2 from "@/assets/img/valunteer/valunteer2.jpg";
-import volunteerThumb_3 from "@/assets/img/valunteer/valunteer3.jpg";
-import volunteerThumb_4 from "@/assets/img/valunteer/valunteer4.jpg";
-import volunteerThumb_5 from "@/assets/img/valunteer/valunteer5.jpg";
-import volunteerThumb_6 from "@/assets/img/valunteer/valunteer6.jpg";
-
-import volunteer2Thumb_1 from "@/assets/img/valunteer/volunteer-two1.jpg";
-import volunteer2Thumb_2 from "@/assets/img/valunteer/volunteer-two2.jpg";
-import volunteer2Thumb_3 from "@/assets/img/valunteer/volunteer-two3.jpg";
-import volunteer2Thumb_4 from "@/assets/img/valunteer/volunteer-two4.jpg";
-import volunteer2Thumb_5 from "@/assets/img/valunteer/volunteer-two5.jpg";
-import volunteer2Thumb_6 from "@/assets/img/valunteer/volunteer-two6.jpg";
-import volunteer2Thumb_7 from "@/assets/img/valunteer/volunteer-two7.jpg";
-import volunteer2Thumb_8 from "@/assets/img/valunteer/volunteer-two8.jpg";
-
-import volunteer3Thumb_1 from "@/assets/img/valunteer/volunteer-three1.jpg";
-import volunteer3Thumb_2 from "@/assets/img/valunteer/volunteer-three2.jpg";
-import volunteer3Thumb_3 from "@/assets/img/valunteer/volunteer-three3.jpg";
-import volunteer3Thumb_4 from "@/assets/img/valunteer/volunteer-three4.jpg";
-import volunteer3Thumb_5 from "@/assets/img/valunteer/volunteer-three5.jpg";
-import volunteer3Thumb_6 from "@/assets/img/valunteer/volunteer-three6.jpg";
-import volunteer3Thumb_7 from "@/assets/img/valunteer/volunteer-three7.jpg";
-import volunteer3Thumb_8 from "@/assets/img/valunteer/volunteer-three8.jpg";
-
 interface DataType {
    id: number;
    page: string;
-   thumb: StaticImageData;
+   thumb: string | StaticImageData;
    name: string;
    item_bg?: string;
 }
@@ -37,40 +12,40 @@ const volunteer_data: DataType[] = [
    {
       id: 1,
       page: "home_1",
-      thumb: volunteerThumb_1,
+      thumb: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
       name: "Robart Jonson",
       item_bg: "valunteer-item--green",
    },
    {
       id: 2,
       page: "home_1",
-      thumb: volunteerThumb_2,
+      thumb: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop",
       name: "Leslie Alexander"
    },
    {
       id: 3,
       page: "home_1",
-      thumb: volunteerThumb_3,
+      thumb: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop",
       name: "Kristin Watson",
       item_bg: "valunteer-item--yellow",
    },
    {
       id: 4,
       page: "home_1",
-      thumb: volunteerThumb_4,
+      thumb: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
       name: "Guy Hawkins",
       item_bg: "valunteer-item--green",
    },
    {
       id: 5,
       page: "home_1",
-      thumb: volunteerThumb_5,
+      thumb: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop",
       name: "Theresa Webb"
    },
    {
       id: 6,
       page: "home_1",
-      thumb: volunteerThumb_6,
+      thumb: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop",
       name: "Brooklyn Simmons",
       item_bg: "valunteer-item--yellow",
    },
@@ -80,53 +55,53 @@ const volunteer_data: DataType[] = [
    {
       id: 1,
       page: "home_2",
-      thumb: volunteer2Thumb_1,
+      thumb: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop",
       name: "Brooklyn Simmons"
    },
    {
       id: 2,
       page: "home_2",
-      thumb: volunteer2Thumb_2,
+      thumb: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop",
       name: "Savannah Nguyen",
       item_bg: "valunteer-two-item__des--yellow",
    },
    {
       id: 3,
       page: "home_2",
-      thumb: volunteer2Thumb_3,
+      thumb: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
       name: "Darrell Steward",
       item_bg: "valunteer-two-item__des--green",
    },
    {
       id: 4,
       page: "home_2",
-      thumb: volunteer2Thumb_4,
+      thumb: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop",
       name: "Leslie Alexander"
    },
    {
       id: 5,
       page: "home_2",
-      thumb: volunteer2Thumb_5,
+      thumb: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop",
       name: "Brooklyn Simmons"
    },
    {
       id: 6,
       page: "home_2",
-      thumb: volunteer2Thumb_6,
+      thumb: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
       name: "Savannah Nguyen",
       item_bg: "valunteer-two-item__des--yellow",
    },
    {
       id: 7,
       page: "home_2",
-      thumb: volunteer2Thumb_7,
+      thumb: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop",
       name: "Darrell Steward",
       item_bg: "valunteer-two-item__des--green",
    },
    {
       id: 8,
       page: "home_2",
-      thumb: volunteer2Thumb_8,
+      thumb: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop",
       name: "Leslie Alexander"
    },
 
@@ -135,49 +110,49 @@ const volunteer_data: DataType[] = [
    {
       id: 1,
       page: "home_3",
-      thumb: volunteer3Thumb_1,
+      thumb: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop",
       name: "Brooklyn Simmons"
    },
    {
       id: 2,
       page: "home_3",
-      thumb: volunteer3Thumb_2,
+      thumb: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop",
       name: "Savannah Nguyen"
    },
    {
       id: 3,
       page: "home_3",
-      thumb: volunteer3Thumb_3,
+      thumb: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
       name: "Darrell Steward"
    },
    {
       id: 4,
       page: "home_3",
-      thumb: volunteer3Thumb_4,
+      thumb: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop",
       name: "Leslie Alexander"
    },
    {
       id: 5,
       page: "home_3",
-      thumb: volunteer3Thumb_5,
+      thumb: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop",
       name: "Brooklyn Simmons"
    },
    {
       id: 6,
       page: "home_3",
-      thumb: volunteer3Thumb_6,
+      thumb: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
       name: "Savannah Nguyen"
    },
    {
       id: 7,
       page: "home_3",
-      thumb: volunteer3Thumb_7,
+      thumb: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop",
       name: "Darrell Steward"
    },
    {
       id: 8,
       page: "home_3",
-      thumb: volunteer3Thumb_8,
+      thumb: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop",
       name: "Leslie Alexander"
    },
 ]

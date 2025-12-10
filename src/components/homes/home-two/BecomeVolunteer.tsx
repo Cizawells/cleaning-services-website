@@ -1,8 +1,6 @@
 import BecomeVolunteerForm from "@/components/forms/BecomeVolunteerForm"
 import Image from "next/image";
 
-import volunteerImg from "@/assets/img/valunteer/volunteer-left.jpg";
-import volunteerCircle from "@/assets/img/valunteer/volunteer-left-circle.jpg";
 import volunteerShape from "@/assets/img/shapes/three-round-big-green.png";
 
 const BecomeVolunteer = () => {
@@ -12,8 +10,7 @@ const BecomeVolunteer = () => {
             <div className="row gap-60 align-items-center">
                <div className="col-lg-6">
                   <div className="volunteer-left-image rel rmb-65">
-                     <Image src={volunteerImg} alt="valunteer" />
-                     <Image className="circle" src={volunteerCircle} alt="valunteer" />
+                     <Image src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=700&fit=crop" alt="Professional Cleaning Service" width={400} height={500} />
                      <Image className="shape top_image_bounce" src={volunteerShape} alt="Shape" />
                   </div>
                </div>
