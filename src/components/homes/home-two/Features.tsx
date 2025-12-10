@@ -10,9 +10,9 @@ const Features = ({ style }: any) => {
                   <div key={item.id} className="col-xl-4 col-md-6">
                      <div className={`feature-item--two ${item.item_bg}`}>
                         <div className="feature-item__icon"><i className={item.icon_name}></i></div>
-                        <h4><Link href={`/causes-details/${item.id}`}>{item.title}</Link></h4>
+                        <h4><Link href={`/services/${item.id}`}>{item.title}</Link></h4>
                         <p>{item.desc}</p>
-                        <Link className="feature-item__btn" href="#">join us now</Link>
+                        <Link className="feature-item__btn" href={`/services/${item.id}`}>Learn More</Link>
                      </div>
                   </div>
                ))}

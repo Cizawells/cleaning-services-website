@@ -11,17 +11,7 @@ interface MenuItem {
 
 const menu_data: MenuItem[] = [
 
-    {
-        id: 1,
-        has_dropdown: true,
-        title: "Home",
-        link: "#",
-        sub_menus: [
-            { link: "/", title: "Home One" },
-            { link: "/home-two", title: "Home Two" },
-            { link: "/home-three", title: "Home Three" },
-        ],
-    },
+  
     {
         id: 2,
         has_dropdown: true,

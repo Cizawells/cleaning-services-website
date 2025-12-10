@@ -17,10 +17,10 @@ interface ContentData {
 }
 
 const about_content: ContentData = {
-   sub_title: "About us",
-   title: (<>Welcome To Our Charity <span>Organization</span></>),
-   desc: (<>There are many variations of passages of available but the majority have suffered alteration in some form, by injected humou ndomised words even slightly believable Making this the first true.</>),
-   list: ["Consectetur adipiscing elitsed", "Nostra dapibus varius et semper", "Nullam venenatis ultricies", "Environment For Our Next", "Consectetur adipiscing elitsed", "Maximus a augue Nullam ante"],
+   sub_title: "About Us",
+   title: (<>Professional <span>Cleaning</span> Services</>),
+   desc: (<>We deliver trustworthy cleaning solutions for homes and businesses using trained teams and eco-friendly products to keep your space healthy and fresh.</>),
+   list: ["Licensed & Insured Professionals", "Eco-friendly Cleaning Products", "Flexible Scheduling", "Deep & Regular Cleans", "Satisfaction Guaranteed", "Competitive Pricing"],
 }
 
 const { sub_title, title, desc, list } = about_content;
@@ -98,8 +98,8 @@ const About = () => {
                   <div className="about-us-image-part mb-65 rel">
                      <Image src={aboutRightImg} alt="About" />
                      <div className="experiences-year" style={{ backgroundImage: `url(/assets/img/about/experiences.jpg)` }}>
-                        <span className="experiences-year__number">25</span>
-                        <span className="experiences-year__text">Years Experiences</span>
+                        <span className="experiences-year__number">10</span>
+                        <span className="experiences-year__text">Years Experience</span>
                      </div>
                   </div>
                </div>

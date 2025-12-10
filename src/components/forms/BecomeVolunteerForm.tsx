@@ -30,7 +30,7 @@ const BecomeVolunteerForm = () => {
 
    const { register, handleSubmit, reset, formState: { errors }, } = useForm<FormData>({ resolver: yupResolver(schema), });
    const onSubmit = (data: FormData) => {
-      const notify = () => toast('Message sent successfully', { position: 'top-center' });
+      const notify = () => toast('Request sent — we will contact you shortly', { position: 'top-center' });
       notify();
       reset();
    };
@@ -40,7 +40,7 @@ const BecomeVolunteerForm = () => {
       <form onSubmit={handleSubmit(onSubmit)} className="volunteer-form">
          <div className="row">
             <div className="col-xl-9 mb-10">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+               <p>Request a quote or schedule your cleaning. We'll get back with available slots and pricing.</p>
             </div>
             <div className="col-sm-6">
                <div className="form-group">
@@ -65,20 +65,20 @@ const BecomeVolunteerForm = () => {
             </div>
             <div className="col-sm-6">
                <div className="form-group">
-                  <label htmlFor="birth-day">Date Of Birth</label>
-                  <input type="date" id="birth-day" name="birth-day" className="form-control" />
+                  <label htmlFor="preferred-date">Preferred Service Date</label>
+                  <input type="date" id="preferred-date" name="preferred-date" className="form-control" />
                </div>
             </div>
             <div className="col-md-12">
                <div className="form-group">
                   <label htmlFor="message">Message</label>
-                  <textarea id="message" {...register("message")} className="form-control" rows={3} placeholder="Write Your Messages"></textarea>
+                  <textarea id="message" {...register("message")} className="form-control" rows={3} placeholder="Tell us about the space, number of rooms and any special requests"></textarea>
                   <p className="form_error">{errors.message?.message}</p>
                </div>
             </div>
             <div className="col-md-12">
                <div className="form-group pt-10 mb-0">
-                  <button type="submit" className="cr-btn ml-5">Send us a message</button>
+                  <button type="submit" className="cr-btn ml-5">Request Quote</button>
                </div>
             </div>
          </div>

@@ -21,8 +21,8 @@ const BecomeVolunteer = () => {
                <div className="col-lg-6">
                   <div className="volunteer-content form-style-two text-white">
                      <div className="section-title mb-40">
-                        <span className="section-title__subtitle mb-10">Be Come Volunteer</span>
-                        <h3>Become a <span>volunteer</span></h3>
+                        <span className="section-title__subtitle mb-10">Book A Service</span>
+                        <h3>Request a <span>Cleaning</span></h3>
                      </div>
                      <BecomeVolunteerForm />
                   </div>
