@@ -5,11 +5,11 @@ const UrgentCause = () => {
    return (
       <div className="urgent-cause-two py-120">
          <div className="container">
-            <div className="urgent-cause-inner bgs-cover p-60 py-120" style={{ backgroundImage: `url(https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1500&h=800&fit=crop)` }}>
+            <div className="urgent-cause-inner bgs-cover p-60 py-120" style={{ backgroundImage: `url(https://images.unsplash.com/photo-1584622180416-e897e59edd84?w=1500&h=800&fit=crop)` }}>
                <div className="row gap-40 align-items-center">
                   <div className="col-lg-6">
                      <div className="urgent-cause-left-image rmb-65">
-                        <Image src="https://images.unsplash.com/photo-1578654377249-e33cae98b126?w=600&h=700&fit=crop" alt="Emergency Cleaning Service" width={400} height={500} />
+                        <Image src="https://images.unsplash.com/photo-1563453392-de7612edde00?w=600&h=700&fit=crop" alt="Emergency Cleaning Service" width={400} height={500} />
                      </div>
                   </div>
                   

@@ -23,7 +23,7 @@ const Testimonial = ({ style }: any) => {
             <div className="row gap-100 align-items-center">
                <div className="col-lg-5">
                   <div className="testimonial-two-image rel z-1 rmb-65">
-                     <Image src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&h=700&fit=crop" alt="Satisfied Cleaning Clients" width={400} height={500} />
+                     <Image src="https://images.unsplash.com/photo-1563453392-de7612edde00?w=600&h=700&fit=crop" alt="Satisfied Cleaning Clients" width={400} height={500} />
                   </div>
                </div>
                

@@ -5,7 +5,7 @@ import heroShape from "@/assets/img/shapes/three-round-green.png"
 
 const HeroArea = () => {
    return (
-      <div className="hero-area-two bgs-cover overlay py-250" style={{ backgroundImage: `url(https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1500&h=800&fit=crop)` }}>
+      <div className="hero-area-two bgs-cover overlay py-250" style={{ backgroundImage: `url(https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1500&h=800&fit=crop)` }}>
          <div className="container">
             <div className="hero-content mt-110 rmt-0 mb-65 text-center text-white rel z-1">
                <h1>Professional Cleaning Services For Homes & Businesses</h1>

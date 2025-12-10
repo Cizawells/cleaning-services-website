@@ -4,7 +4,7 @@ import counter_data from "@/data/counterData"
 
 const Counter = () => {
    return (
-      <div className="counter-area pt-110 rpt-115 pb-90 bgs-cover rel z-1" style={{ backgroundImage: `url(https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1500&h=800&fit=crop)` }}>
+      <div className="counter-area pt-110 rpt-115 pb-90 bgs-cover rel z-1" style={{ backgroundImage: `url(https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1500&h=800&fit=crop)` }}>
          <div className="container">
             <div className="row justify-content-end">
                <div className="col-xl-8 col-lg-10">

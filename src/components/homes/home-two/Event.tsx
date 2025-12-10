@@ -4,7 +4,7 @@ import Link from "next/link"
 
 const Event = () => {
    return (
-      <div className="our-event-two bgs-cover pt-120 pb-90 rel z-1" style={{ backgroundImage: `url(https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1500&h=800&fit=crop)` }}>
+      <div className="our-event-two bgs-cover pt-120 pb-90 rel z-1" style={{ backgroundImage: `url(https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1500&h=800&fit=crop)` }}>
          <div className="container container-1090">
             <div className="row justify-content-center">
                <div className="col-xl-7 col-lg-8 col-md-10">
