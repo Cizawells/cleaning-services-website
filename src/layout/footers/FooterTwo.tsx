@@ -90,19 +90,19 @@ const FooterTwo = () => {
             </div>
          </div>
          
-         <div className="footer-bottom mt-70">
+         { <div className="footer-bottom mt-70">
             <div className="container">
                <div className="footer-bottom__inner">
-                  <div className="donate-by">
+                  {/* <div className="donate-by">
                      <span>Donate by :</span>
                      <Image src={donate} alt="Donate By" />
-                  </div>
+                  </div> */}
                   <div className="copyright">
                      <p>{copyright_text}</p>
                   </div>
                </div>
             </div>
-         </div>
+         </div> }
       </footer>
    )
 }

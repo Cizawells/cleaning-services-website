@@ -70,7 +70,7 @@ const FooterOne = () => {
             </div>
          </div>
          
-         <div className="footer-bottom mt-50">
+         {/* <div className="footer-bottom mt-50">
             <div className="container">
                <div className="footer-bottom__inner">
                   <div className="donate-by">
@@ -82,7 +82,7 @@ const FooterOne = () => {
                   </div>
                </div>
             </div>
-         </div>
+         </div> */}
       </footer>
    )
 }

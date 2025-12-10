@@ -77,8 +77,8 @@ const features_data: DataType[] = [
       id:1,
       page:"home_2",
       icon_name:"flaticon-help",
-      title:"Professional Cleaning Team",
-      desc:"Our experienced team ensures your space is cleaned thoroughly and efficiently.",
+      title:"Services",
+      desc:"We provide a wide range of expert cleaning services across the UK.",
    },
    {
       id:2,
