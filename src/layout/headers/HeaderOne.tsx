@@ -6,7 +6,7 @@ import { useState } from "react"
 import UseSticky from "@/hooks/UseSticky"
 import HeaderTop from "./Menu/HeaderTop"
 
-import HeaderLogo_1 from "@/assets/img/logos/logo.svg";
+import HeaderLogo_1 from "@/assets/img/logos/logo2.jpeg";
 import HeaderLogo_2 from "@/assets/img/logos/logo-white.png";
 
 const HeaderOne = ({ style_1, style_2 }: any) => {
@@ -39,7 +39,7 @@ const HeaderOne = ({ style_1, style_2 }: any) => {
                   <Link href="/"><Image 
                                     src={style_2 ? HeaderLogo_2 : HeaderLogo_1} 
                                     alt="Cleaning Services Logo"
-                                    width={100}
+                                    width={60}
                                     height={40}
                                     priority
                                     style={{ height: "auto", width: "auto", maxWidth: "100px" }}

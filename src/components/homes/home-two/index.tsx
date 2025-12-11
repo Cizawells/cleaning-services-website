@@ -32,7 +32,7 @@ const HomeTwo = () => {
         <Testimonial style={false} />
         <CtaArea />
         <FAQ />
-        <Blog style={true} />
+        {/* <Blog style={true} /> */}
         <Brand style={false} />
       </main>
       <FooterTwo/>

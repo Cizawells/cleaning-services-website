@@ -25,9 +25,9 @@ const about_content: ContentData = {
 
 const about_img_data = [
    "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop",
-   "https://images.unsplash.com/photo-1563453392-de7612edde00?w=400&h=300&fit=crop",
-   "https://images.unsplash.com/photo-1584622180416-e897e59edd84?w=400&h=300&fit=crop",
-   "https://images.unsplash.com/photo-1563453392-de7612edde00?w=400&h=300&fit=crop"
+   "https://images.unsplash.com/photo-1527857050620-14bbb14ad601?w=400&h=300&fit=crop",
+   "https://images.unsplash.com/photo-1599505606035-61e2e8f81634?w=400&h=300&fit=crop",
+   "https://images.unsplash.com/photo-1527857050620-14bbb14ad601?w=400&h=300&fit=crop"
 ];
 
 const { sub_title, title, desc, list } = about_content;

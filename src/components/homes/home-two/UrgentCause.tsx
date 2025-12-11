@@ -9,7 +9,7 @@ const UrgentCause = () => {
                <div className="row gap-40 align-items-center">
                   <div className="col-lg-6">
                      <div className="urgent-cause-left-image rmb-65">
-                        <Image src="https://images.unsplash.com/photo-1563453392-de7612edde00?w=600&h=700&fit=crop" alt="Emergency Cleaning Service" width={400} height={500} />
+                        <Image src="https://images.unsplash.com/photo-1557804506-669714526ba3?w=600&h=700&fit=crop" alt="Emergency Cleaning Service" width={400} height={500} />
                      </div>
                   </div>
                   

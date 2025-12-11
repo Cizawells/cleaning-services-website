@@ -14,6 +14,7 @@ interface DataType {
    btn_bg?: string;
    bg_img?: StaticImageData;
    item_bg?:string;
+   feature_img?: string;
 }
 
 const features_data: DataType[] = [
@@ -77,24 +78,27 @@ const features_data: DataType[] = [
       id:1,
       page:"home_2",
       icon_name:"flaticon-help",
-      title:"Services",
-      desc:"We provide a wide range of expert cleaning services across the UK.",
+      title:"Residential Cleaning",
+      desc:"Professional home cleaning services tailored to your needs. From regular maintenance to deep cleaning, we keep your home fresh and healthy.",
+      feature_img:"https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop",
    },
    {
       id:2,
       page:"home_2",
       icon_name:"flaticon-donation",
-      title:"Book a Cleaning Service",
-      desc:"Fast and reliable cleaning services for your home, office, or commercial space.",
+      title:"Commercial Cleaning",
+      desc:"Keep your business pristine with our commercial cleaning solutions. We service offices, retail spaces, and facilities of all sizes.",
       item_bg:"feature-item--green",
+      feature_img:"https://images.unsplash.com/photo-1527857050620-14bbb14ad601?w=600&h=400&fit=crop",
    },
    {
       id:3,
       page:"home_2",
       icon_name:"flaticon-solidarity",
-      title:"Reliable Services",
-      desc:"Trusted cleaning services that leave your home or office spotless every time.",
+      title:"Specialized Services",
+      desc:"Carpet cleaning, window washing, post-construction cleanup, and more. We handle specialized cleaning projects with expertise and care.",
       item_bg:"feature-item--yellow",
+      feature_img:"https://images.unsplash.com/photo-1599505606035-61e2e8f81634?w=600&h=400&fit=crop",
    },
 
    // home three

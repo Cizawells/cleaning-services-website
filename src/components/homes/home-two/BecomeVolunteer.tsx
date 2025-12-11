@@ -10,7 +10,7 @@ const BecomeVolunteer = () => {
             <div className="row gap-60 align-items-center">
                <div className="col-lg-6">
                   <div className="volunteer-left-image rel rmb-65">
-                     <Image src="https://images.unsplash.com/photo-1563453392-de7612edde00?w=600&h=700&fit=crop" alt="Professional Cleaning Service" width={400} height={500} />
+                     <Image src="https://images.unsplash.com/photo-1527857050620-14bbb14ad601?w=600&h=700&fit=crop" alt="Professional Cleaning Service" width={400} height={500} />
                      <Image className="shape top_image_bounce" src={volunteerShape} alt="Shape" />
                   </div>
                </div>
