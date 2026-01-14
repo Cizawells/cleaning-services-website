@@ -15,7 +15,8 @@ const HeaderTop = ({ style }: any) => {
                 <li>
                   <b>
                     Call now -{" "}
-                    <Link href="callto:44-7883055156">+44 7883 055156</Link>
+                    <Link href="callto:44-7883055156">+44 7883 055156</Link>{" "}
+                    <span>;</span>
                     <Link href="callto:44-7883055156">+44 7883 055156</Link>
                   </b>
                 </li>
