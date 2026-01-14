@@ -25,7 +25,7 @@ const HomeTwo = () => {
         <UrgentCause />
         <About />
         {/* <OurCause /> */}
-        <Counter />
+        {/* <Counter /> */}
         {/* <Event /> */}
         {/* <BecomeVolunteer /> */}
         {/* <Volunteer style={true} /> */}
