@@ -5,9 +5,9 @@ import Slider from "react-slick";
 
 import brand_1 from "@/assets/img/clean/6.jpg";
 import brand_2 from "@/assets/img/clean/7.jpg";
-import brand_3 from "@/assets/img/client-logo/client-logo3.png";
-import brand_4 from "@/assets/img/client-logo/client-logo4.png";
-import brand_5 from "@/assets/img/client-logo/client-logo5.png";
+import brand_3 from "@/assets/img/clean/4.jpg";
+import brand_4 from "@/assets/img/clean/2.jpg";
+import brand_5 from "@/assets/img/clean/3.jpg";
 
 const brand_data: StaticImageData[] = [
   brand_1,

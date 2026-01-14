@@ -5,6 +5,7 @@ import Brand from "@/components/common/Brand";
 import ContactArea from "./ContactArea";
 import ContactInfo from "./ContactInfo";
 import LocationMap from "./LocationMap";
+import FooterTwo from "@/layout/footers/FooterTwo";
 
 const Contact = () => {
   return (
@@ -17,7 +18,7 @@ const Contact = () => {
         <ContactInfo />
         <LocationMap />
       </main>
-      <FooterOne />
+      <FooterTwo />
     </>
   );
 };
