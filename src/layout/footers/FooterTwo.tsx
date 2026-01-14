@@ -25,7 +25,7 @@ interface ContentType {
 
 const footer_content: ContentType = {
   footer_about_text:
-    "Wimply dummy text of the priatypeset ting industry orem Ipsum has Maecenas quis eros at ante lacinia efficitur.",
+    " Ready for a cleaner space? Book online or call us at +44 7482 360437.",
   gallery: [
     footerGallery_1,
     footerGallery_2,
@@ -35,7 +35,7 @@ const footer_content: ContentType = {
     footerGallery_6,
   ],
   news_title: "Newsletter",
-  news_text: "Wimply dummy text of the priatyp industry orem Ipsum",
+  news_text: "",
   gallery_title: "Photo Gallery",
   copyright_text: "Copyright 2025 All Right Reserved",
 };

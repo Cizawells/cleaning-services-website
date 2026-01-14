@@ -36,7 +36,8 @@ const about_content: ContentData = {
 
 const about_img_data = [
   "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop",
-  "https://images.unsplash.com/photo-1527857050620-14bbb14ad601?w=400&h=300&fit=crop",
+  "/assets/img/clean/3.jpg",
+  "/assets/img/clean/5.jpg",
   "https://images.unsplash.com/photo-1599505606035-61e2e8f81634?w=400&h=300&fit=crop",
   "https://images.unsplash.com/photo-1527857050620-14bbb14ad601?w=400&h=300&fit=crop",
 ];
@@ -121,8 +122,8 @@ const About = () => {
           <div className="col-xl-6">
             <div className="about-us-image-part mb-65 rel">
               <Image
-                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=700&fit=crop"
-                alt="Professional Cleaning Team"
+                src="/assets/img/clean/2.jpg"
+                alt="Professional cleaning Team"
                 width={500}
                 height={600}
               />
@@ -132,8 +133,8 @@ const About = () => {
                   backgroundImage: `url(https://images.unsplash.com/photo-1578654377249-e33cae98b126?w=200&h=200&fit=crop)`,
                 }}
               >
-                <span className="experiences-year__number">10</span>
-                <span className="experiences-year__text">Years Experience</span>
+                {/* <span className="experiences-year__number">10</span> */}
+                {/* <span className="experiences-year__text">Years Experience</span> */}
               </div>
             </div>
           </div>

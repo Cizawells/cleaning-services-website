@@ -22,12 +22,12 @@ const contact_data: DataType[] = [
     title: "Phone Number",
     contact_info: [
       {
-        info_link: "callto:+(44)984754",
-        info_title: "+ (321) 984 754",
+        info_link: "callto:+(44)7482 360437",
+        info_title: "+ (44) 7482 360437",
       },
       {
-        info_link: "callto:+1-212-9876543",
-        info_title: "+1-212-9876543",
+        info_link: "callto:+44 7482 360437",
+        info_title: "+44 7482 360437",
       },
     ],
   },
@@ -38,12 +38,12 @@ const contact_data: DataType[] = [
     title: "Email Address",
     contact_info: [
       {
-        info_link: "mailto:info1234@gmail.com",
-        info_title: "info1234@gmail.com",
+        info_link: "mailto:andre@arkoracleaning.com",
+        info_title: "andre@arkoracleaning.com",
       },
       {
-        info_link: "mailto:test1234@gmail.com",
-        info_title: "test1234@gmail.com",
+        info_link: "mailto:alex@arkoracleaning.com",
+        info_title: "alex@arkoracleaning.com",
       },
     ],
   },
@@ -53,8 +53,9 @@ const contact_data: DataType[] = [
     title: "Office Address",
     contact_info_text: (
       <>
-        2118 Thornridge Cir. Syracuse <br />
-        Connecticut 35624
+        26 Milnrow Crescent, Sheffield,
+        <br />
+        S5 9LQ
       </>
     ),
   },

@@ -17,7 +17,7 @@ const HeaderTop = ({ style }: any) => {
                     Call now -{" "}
                     <Link href="callto:44-7883055156">+44 7883 055156</Link>{" "}
                     <span>;</span>
-                    <Link href="callto:44-7883055156">++44 7482 360437</Link>
+                    <Link href="callto:44-482360437">+44 7482 360437</Link>
                   </b>
                 </li>
                 <li>26 Milnrow Crescent, Sheffield, S5 9LQ</li>
