@@ -28,8 +28,8 @@ const HeaderTop = ({ style }: any) => {
                   <span>Welcome</span>, Need cleaning services?{" "}
                 </li>
                 <li>
-                  <i className="flaticon-pin"></i> 123 Clean St, Your City,
-                  10001
+                  <i className="flaticon-pin"></i> 26 Milnrow Crescent,
+                  Sheffield, S5 9LQ
                 </li>
               </>
             )}
