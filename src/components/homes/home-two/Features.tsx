@@ -1,32 +1,55 @@
-import features_data from "@/data/featuresData"
-import Link from "next/link"
-import Image from "next/image"
-import styles from "./features.module.scss"
+import features_data from "@/data/featuresData";
+import Link from "next/link";
+import Image from "next/image";
+import styles from "./features.module.scss";
 
 const Features = ({ style }: any) => {
-   return (
-      <div className={`${style ? "features-area-four bgs-cover overlay pt-120 pb-90" : "features-area-two rel z-2"}`}>
-         <div className="container">
-            <div className="row no-gutter justify-content-center">
-               {features_data.filter((item) => item.page === "home_2").map((item) => (
-                  <div key={item.id} className="col-xl-4 col-md-6">
-                     <div className={`${styles.featureItemWithBg} feature-item--two ${item.item_bg}`} style={{
-                        backgroundImage: item.feature_img ? `url('${item.feature_img}')` : 'none',
-                     }}>
-                        <div className={styles.featureOverlay}></div>
-                        <div className={styles.featureContent}>
-                           <div className="feature-item__icon"><i className={item.icon_name}></i></div>
-                           <h4><Link href={`/services/${item.id}`}>{item.title}</Link></h4>
-                           <p>{item.desc}</p>
-                           <Link className="feature-item__btn" href={`/services/${item.id}`}>Learn More</Link>
-                        </div>
-                     </div>
+  return (
+    <div
+      id="features"
+      className={`${
+        style
+          ? "features-area-four bgs-cover overlay pt-120 pb-90"
+          : "features-area-two rel z-2"
+      }`}
+    >
+      <div className="container">
+        <div className="row no-gutter justify-content-center">
+          {features_data
+            .filter((item) => item.page === "home_2")
+            .map((item) => (
+              <div key={item.id} className="col-xl-4 col-md-6">
+                <div
+                  className={`${styles.featureItemWithBg} feature-item--two ${item.item_bg}`}
+                  style={{
+                    backgroundImage: item.feature_img
+                      ? `url('${item.feature_img}')`
+                      : "none",
+                  }}
+                >
+                  <div className={styles.featureOverlay}></div>
+                  <div className={styles.featureContent}>
+                    <div className="feature-item__icon">
+                      <i className={item.icon_name}></i>
+                    </div>
+                    <h4>
+                      <Link href={`/services/${item.id}`}>{item.title}</Link>
+                    </h4>
+                    <p>{item.desc}</p>
+                    <Link
+                      className="feature-item__btn"
+                      href={`/services/${item.id}`}
+                    >
+                      Learn More
+                    </Link>
                   </div>
-               ))}
-            </div>
-         </div>
+                </div>
+              </div>
+            ))}
+        </div>
       </div>
-   )
-}
+    </div>
+  );
+};
 
-export default Features
+export default Features;

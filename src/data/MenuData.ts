@@ -27,32 +27,14 @@ const menu_data: MenuItem[] = [
     id: 2,
     has_dropdown: true,
     title: "services",
-    link: "#",
-    sub_menus: [
-      { link: "#", title: "Washroom Consumables" },
-      { link: "#", title: "Hygiene Rental" },
-      { link: "#", title: "Deep Cleaning" },
-      { link: "#", title: "Window Cleaning" },
-      { link: "#", title: "High Level Cleaning" },
-    ],
+    link: "/#features",
   },
 
   {
-    id: 3,
-    has_dropdown: true,
-    title: "Sectors",
-    link: "#",
-    sub_menus: [
-      { link: "#", title: "Facilities Management" },
-      { link: "#", title: "Industrial" },
-      { link: "#", title: "Education" },
-    ],
-  },
-  {
     id: 4,
     has_dropdown: false,
-    title: "Locations",
-    link: "#",
+    title: "About us",
+    link: "/#about",
     sub_menus: [
       { link: "#", title: "About" },
       // { link: "/causes-slider", title: "Causes Slider" },
