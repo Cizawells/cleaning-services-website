@@ -15,7 +15,7 @@ const HeaderTop = ({ style }: any) => {
                 <li>
                   <b>
                     Call now -{" "}
-                    <Link href="callto:44-7883055156">+44 7883055156</Link>{" "}
+                    <Link href="callto:44-7883055156">+44 7883 055156</Link>{" "}
                     <span>;</span>
                     <Link href="callto:44-7883055156">++44 7482 360437</Link>
                   </b>
@@ -40,7 +40,7 @@ const HeaderTop = ({ style }: any) => {
               <Link href="#">
                 <i className="fab fa-facebook-f"></i>
               </Link>
-              <Link href="#">
+              {/* <Link href="#">
                 <i className="fab fa-twitter"></i>
               </Link>
               <Link href="#">
@@ -48,7 +48,7 @@ const HeaderTop = ({ style }: any) => {
               </Link>
               <Link href="#">
                 <i className="fab fa-linkedin-in"></i>
-              </Link>
+              </Link> */}
             </li>
           </ul>
         </div>
