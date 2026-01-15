@@ -14,9 +14,8 @@ const LocationMap = () => {
           width="600"
           height="450"
           style={{ border: 0, width: "100%" }}
-          allowfullscreen
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          // referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </div>

@@ -22,11 +22,11 @@ const FaqContent = () => {
 
       <div className="project-complete">
         <div className="project-complete__icon">
-          <i className="flaticon-charity"></i>
+          {/* <i className="flaticon-charity"></i> */}
         </div>
         <div className="project-complete__content">
-          <h5>We Complate 15000+ Project</h5>
-          <span>Donet for charity</span>
+          <h5>We Complate 10+ Projects</h5>
+          <span></span>Welcome
         </div>
       </div>
     </>
