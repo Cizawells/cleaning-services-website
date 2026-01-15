@@ -16,8 +16,6 @@ import footerGallery_6 from "@/assets/img/footer/gallery-two6.jpg";
 
 interface ContentType {
   footer_about_text: string;
-  gallery: StaticImageData[];
-  gallery_title: string;
   news_title: string;
   news_text: string;
   copyright_text: string;
@@ -26,28 +24,14 @@ interface ContentType {
 const footer_content: ContentType = {
   footer_about_text:
     " Ready for a cleaner space? Book online or call us at +44 7482 360437.",
-  gallery: [
-    footerGallery_1,
-    footerGallery_2,
-    footerGallery_3,
-    footerGallery_4,
-    footerGallery_5,
-    footerGallery_6,
-  ],
+
   news_title: "Newsletter",
   news_text: "",
-  gallery_title: "Photo Gallery",
   copyright_text: "Copyright 2026 All Right Reserved",
 };
 
-const {
-  footer_about_text,
-  gallery,
-  news_title,
-  news_text,
-  gallery_title,
-  copyright_text,
-} = footer_content;
+const { footer_about_text, news_title, news_text, copyright_text } =
+  footer_content;
 
 const FooterTwo = () => {
   return (
@@ -88,36 +72,6 @@ const FooterTwo = () => {
                 </div>
               </div>
             ))}
-
-          <div className="col-xl-5">
-            <div className="row">
-              <div className="col-sm-6">
-                <div className="widget widget_gallery">
-                  <h4 className="widget-title">{gallery_title}</h4>
-                  <div className="gallery-photos">
-                    {gallery.map((gallery, index) => (
-                      <a key={index} href="assets/img/footer/gallery-two1.jpg">
-                        <Image src={gallery} alt="Gallery" />
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-sm-6">
-                <div className="widget widget_subscribe">
-                  <h4 className="widget-title">{news_title}</h4>
-                  <p>{news_text}</p>
-                  <form onClick={(e) => e.preventDefault()}>
-                    <input type="email" placeholder="Email address" required />
-                    <button type="submit">
-                      <i className="flaticon-right-arrow"></i>
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
