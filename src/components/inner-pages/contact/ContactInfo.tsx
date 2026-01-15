@@ -22,8 +22,8 @@ const contact_data: DataType[] = [
     title: "Phone Number",
     contact_info: [
       {
-        info_link: "callto:+(44)7482 360437",
-        info_title: "+ (44) 7482 360437",
+        info_link: "callto:+44 7883 055156",
+        info_title: "+44 7883 055156",
       },
       {
         info_link: "callto:+44 7482 360437",
@@ -55,7 +55,7 @@ const contact_data: DataType[] = [
       <>
         26 Milnrow Crescent, Sheffield,
         <br />
-        S5 9LQ
+        South yorkshire, United kingdom
       </>
     ),
   },

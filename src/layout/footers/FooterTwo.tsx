@@ -37,7 +37,7 @@ const footer_content: ContentType = {
   news_title: "Newsletter",
   news_text: "",
   gallery_title: "Photo Gallery",
-  copyright_text: "Copyright 2025 All Right Reserved",
+  copyright_text: "Copyright 2026 All Right Reserved",
 };
 
 const {
