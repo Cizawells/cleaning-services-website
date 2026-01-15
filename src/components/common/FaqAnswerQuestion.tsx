@@ -43,8 +43,9 @@ const FaqAnswerQuestion = () => {
           </h2>
           <p>
             Find answers to common questions about our professional cleaning
-            services, pricing, scheduling, and commitment to quality. We're here
-            to ensure your space is spotless and your experience is exceptional.
+            services, pricing, scheduling, and commitment to quality.
+            We&lsquo;re here to ensure your space is spotless and your
+            experience is exceptional.
           </p>
         </div>
 
