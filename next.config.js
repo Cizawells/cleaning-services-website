@@ -8,6 +8,13 @@ const nextConfig = {
       },
     ],
   },
+  webpack: (config, { isServer }) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      'hls.js': 'hls.js/dist/hls.js',
+    };
+    return config;
+  },
 }
 
 module.exports = nextConfig
