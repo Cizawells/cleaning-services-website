@@ -1,57 +1,47 @@
 "use client";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
-import Slider from "react-slick";
+import { useEffect, useState } from "react";
+import { client } from "@/sanity/lib/client";
+import imageUrlBuilder from "@sanity/image-url";
 
-import brand_1 from "@/assets/img/clean/6.jpg";
-import brand_2 from "@/assets/img/clean/7.jpg";
-import brand_3 from "@/assets/img/clean/4.jpg";
-import brand_4 from "@/assets/img/clean/2.jpg";
-import brand_5 from "@/assets/img/clean/3.jpg";
+const builder = imageUrlBuilder(client);
 
-const brand_data: StaticImageData[] = [
-  brand_1,
-  brand_2,
-  brand_3,
-  brand_4,
-  brand_5,
-];
+interface GalleryImage {
+  _key?: string;
+  asset: {
+    _ref: string;
+  };
+  crop?: any;
+  hotspot?: any;
+}
+
+interface ContactData {
+  gallery?: GalleryImage[];
+}
 
 const Brand = ({ style }: any) => {
-  const settings = {
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
-    fade: false,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 375,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
+  const [gallery, setGallery] = useState<GalleryImage[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchGallery = async () => {
+      try {
+        const data = await client.fetch(`*[_type == "contact"][0] { gallery[] }`, {}, {
+          next: { tags: ['contact'], revalidate: 60 }
+        });
+        if (data?.gallery && Array.isArray(data.gallery)) {
+          setGallery(data.gallery);
+        }
+      } catch (error) {
+        console.error('Error fetching gallery:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchGallery();
+  }, []);
 
   return (
     <div
@@ -63,19 +53,33 @@ const Brand = ({ style }: any) => {
       }}
     >
       <div className={`container ${style ? "container-1370" : ""}`}>
-        <Slider {...settings} className="client-logo-wrap">
-          {brand_data.map((brand, index) => (
-            <div key={index} className="client-logo-item">
-              <Link href="#">
-                <Image
-                  src={brand}
-                  alt="Client Logo"
-                  style={{ height: "106px", width: "160px" }}
-                />
-              </Link>
-            </div>
-          ))}
-        </Slider>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px' }}>
+          {gallery && gallery.length > 0 ? (
+            gallery.map((image, index) => {
+              const imageUrl = image?.asset ? builder.image(image.asset).url() : null;
+              return (
+                <div key={image._key || `img-${index}`} className="client-logo-item" style={{ flex: '1 1 auto', minWidth: '150px' }}>
+                  <Link href="#">
+                    <div style={{ padding: '15px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      {imageUrl && (
+                        <Image
+                          src={imageUrl}
+                          alt="Client Logo"
+                          width={200}
+                          height={150}
+                          priority
+                          style={{ height: "150px", width: "200px", objectFit: "cover", borderRadius: "8px" }}
+                        />
+                      )}
+                    </div>
+                  </Link>
+                </div>
+              );
+            })
+          ) : (
+            loading && <p>Loading gallery...</p>
+          )}
+        </div>
       </div>
     </div>
   );
