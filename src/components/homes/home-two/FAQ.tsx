@@ -6,10 +6,18 @@ import FaqAnswerQuestion from "@/components/common/FaqAnswerQuestion";
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import faqThumb from "@/assets/img/video/faq-video.jpg";
+import type { StaticImageData } from "next/image";
+
+interface FaqDataType {
+  faqTitle: string;
+  faqText: string;
+  faqVideoId: string;
+  faqVideoThumbnail: string | StaticImageData;
+}
 
 const FAQ = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
-  const [faqData, setFaqData] = useState({
+  const [faqData, setFaqData] = useState<FaqDataType>({
     faqTitle: "Frequently Asked Questions",
     faqText: "Find answers to common questions about our cleaning services.",
     faqVideoId: "tUP5S4YdEJo",
